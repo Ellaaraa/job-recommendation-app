@@ -1,0 +1,140 @@
+/* ---------------------- LAYOUT ---------------------- */
+
+.main-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+}
+
+.main-page {
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* ---------------------- SIDEBAR ---------------------- */
+
+.sidebar {
+    position: fixed;
+    width: 30%;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: #f8f9fa;
+    z-index: 1000;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#sidebar-collapse {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 30px;
+    overflow-y: scroll;
+}
+
+#user-input-panel {
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+/* ---------------------- INPUT STYLING ---------------------- */
+
+.input_container {
+    padding: 10px;
+}
+
+.weights {
+    display: inline;
+    width: 40px;
+}
+
+.control_label {
+    padding-left: 10px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.dcc_control {
+    display: block;
+    font-weight: normal;
+}
+
+button {
+    border-radius: 5px;
+}
+
+#job_title_selector {
+    width: 100%;
+}
+
+/* ---------------------- MAIN CONTENT ---------------------- */
+
+#chart-container {
+    flex: 7;
+    padding: 10px;
+    height: 100vh;
+    overflow-y: scroll;
+    padding-bottom: 50px;
+}
+
+.chart-container-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.chart-item {
+    text-align: left;
+}
+
+/* ---------------------- BUTTONS ---------------------- */
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+/* ---------------------- INFO DISPLAY ---------------------- */
+
+#info-display {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#info-container {
+    flex: 3;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 100vh;
+    overflow-y: scroll;
+    padding-bottom: 60px;
+}
+
+/* ---------------------- MAPS ---------------------- */
+
+#heatmap-container {
+    display: block;
+}
+
+#city-map-container {
+    margin-top: 10px;
+    display: block;
+}
+
+#static-map {
+    margin: 0px;
+    padding: 5px;
+}
+
+#choropleth-map {
+    height: 75vh;
+}
